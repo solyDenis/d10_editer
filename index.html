@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://cdn.tailwindcss.com"></script>
-        <>
+        
     </head>
 
     <body class="">
@@ -12,16 +12,17 @@
             <br>
             <span class="border-bottom block border-solid border-4 mx-60 shawow-xl"></span>
             <ul class="flex justify-center">
-                <button onClick="document.getElementById("text")" class="shadow-lg border-solid border-2 rounded-lg border-purple-900 p-6 m-2">Bold</button>
-                <button class="shadow-lg border-solid border-2 rounded-lg border-purple-900 p-6 m-2">Italic</button>
-                <button class="shadow-lg border-solid border-2 rounded-lg border-purple-900 p-6 m-2">M_l</button>
-                <button class="shadow-lg border-solid border-2 rounded-lg border-purple-900 p-6 m-2">M_C</button>
-                <button class="shadow-lg border-solid border-2 rounded-lg border-purple-900 p-6 m-2">M_R</button>
-                <button class="shadow-lg border-solid border-2 rounded-lg border-purple-900 p-6 m-2">Uper Case</button>               
-                <button class="shadow-lg border-solid border-2 rounded-lg border-purple-900 p-6 m-2">Lower Case</button>
-                <button class="shadow-lg border-solid border-2 rounded-lg border-purple-900 p-6 m-2">Capitalize</button>
-                <button class="shadow-lg border-solid border-2 rounded-lg border-purple-900 p-6 m-2">Clear Text</button>
+                <button onClick="document.getElementById('text').style.fontWeight= 'Bold'" class="shadow-lg border-solid border-2 rounded-lg border-purple-900 p-6 m-2">Bold</button>
+                <button onClick="document.getElementById('text').style.fontStyle= 'italic'" class="shadow-lg border-solid border-2 rounded-lg border-purple-900 p-6 m-2">Italic</button>
+                <button onClick="document.getElementById('text').style.textAlign= 'left'" class="shadow-lg border-solid border-2 rounded-lg border-purple-900 p-6 m-2">M_l</button>
+                <button onClick="document.getElementById('text').style.textAlign= 'center'" class="shadow-lg border-solid border-2 rounded-lg border-purple-900 p-6 m-2">M_C</button>
+                <button onClick="document.getElementById('text').style.textAlign= 'right'" class="shadow-lg border-solid border-2 rounded-lg border-purple-900 p-6 m-2">M_R</button>
+                <button onClick="document.getElementById('text').style.textTransform= 'uppercase'" class="shadow-lg border-solid border-2 rounded-lg border-purple-900 p-6 m-2">Upper Case</button>               
+                <button onClick="document.getElementById('text').style.textTransform= 'lowercase'" class="shadow-lg border-solid border-2 rounded-lg border-purple-900 p-6 m-2">Lower Case</button>
+                <button onClick="document.getElementById('text').style.textTransform= 'capitalize'" class="shadow-lg border-solid border-2 rounded-lg border-purple-900 p-6 m-2">Capitalize</button>
+                <button onClick="document.getElementById('text').value= ''" class="shadow-lg border-solid border-2 rounded-lg border-purple-900 p-6 m-2">Clear Text</button>
             </ul>
+           
             <br>
             <textarea  class="shadow-lg border-solid border-8 border-purple-900 p-4 m-2"name="te" id="text" cols="100" rows="20"></textarea>
         </div>
